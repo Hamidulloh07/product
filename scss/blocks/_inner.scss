@@ -1,0 +1,163 @@
+.inner {
+  background-image: url(/image/Bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: calc(50% - -30px)1px;
+  background-color: $section_background-color;
+  padding-bottom: 50px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.inner__div {
+
+}
+
+.inner__heading--div {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.inner__heading { 
+  @include heading;
+  font-size: 32px;
+line-height: 48px;
+text-align: center;
+color: $title-color;
+}
+
+.inner__list {
+  @include list;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.inner__item {
+  position: relative;
+  padding-top: 80px;
+  max-width: 240px;
+  width: 100%;
+  height: 178px;
+}
+
+.inner__item:nth-child(1):before {
+  background-image: url(/image/before-img.png);
+  width: 55px;
+  height: 55px;
+  bottom: 90px;
+  left: -3px;
+  position: absolute;
+  content: "";
+
+}
+
+.inner__item:nth-child(2):before {
+  background-image: url(/image/before-img-2.png);
+  width: 55px;
+  height: 55px;
+  bottom: 90px;
+  left: -3px;
+  position: absolute;
+  content: "";
+
+}
+.inner__item:nth-child(3):before {
+  background-image: url(/image/before-img-3.png);
+  width: 55px;
+  height: 55px;
+  bottom: 90px;
+  left: -3px;
+  position: absolute;
+  content: "";
+
+}
+
+.inner__item:nth-child(4):before {
+  background-image: url(/image/before-img-4.png);
+  width: 55px;
+  height: 55px;
+  bottom: 87px;
+  left: -3px;
+  position: absolute;
+  content: "";
+
+}
+
+
+
+.inner__sub-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #22343D;
+}
+
+.inner__sub-text {
+  @include text;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+
+.inner__button {
+  @include link-style;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 175px;
+  padding: 15px 0px;
+}
+
+.inner__button:hover {
+  background: #c8dad7;
+  color: #02897A;
+
+}
+
+
+
+
+@media only screen and (max-width:425px) {
+  .inner {
+    background-image: url(/image/Bgrespon.png);
+    background-size: 411px;
+    background-position: calc(50%) 1100px;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+  }
+
+  .inner {
+  }
+  .inner__list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .inner__item {
+    margin-bottom: 52px;
+  }
+  .inner__heading {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .inner__item:nth-child(1):before {
+    left: 85px;
+  }
+  .inner__item:nth-child(2):before {
+    left: 85px;
+  }
+  .inner__item:nth-child(3):before {
+    left: 85px;
+  }
+  .inner__item:nth-child(4):before {
+    left: 85px;
+  }
+
+}

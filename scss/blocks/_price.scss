@@ -1,0 +1,164 @@
+.price {
+  margin-top: 100px;
+}
+
+.price__div {
+
+}
+
+.price__heading {
+  @include heading;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 34px;
+  line-height: 51px;
+  color: #22343D;
+}
+
+.price__text {
+  @include text;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #22343D;
+}
+
+.price__list {
+  @include list;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price__item {
+  padding: 24px 60px 32px;
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.price__button:hover {
+  background-color: rgb(255, 134, 134);
+  color: #02897A;
+}
+
+.price__item:nth-child(2) .price__button:hover {
+  background-color: rgb(255, 134, 134);
+  color: #ffffff;
+}
+
+
+.price__item:nth-child(2) {
+  background-color:  #02897A;
+}
+
+.price__item:nth-child(2) h3{
+  color: white
+}
+
+.price__item:nth-child(2) p{
+  color: white
+}
+
+.price__item:nth-child(2) button {
+  background-color: #FFFFFF;
+  color:  #02897A;
+}
+
+
+.price__sub-title {
+  @include heading;
+  font-size: 24px;
+line-height: 40px;
+color: #22343D;
+}
+
+.price__sub-text {
+  @include text;
+  display: flex;
+  font-size: 16px;
+  line-height: 40px;
+  color: #22343D;
+}
+
+.price__sub-text-2 {
+  position: relative;
+  margin: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #02897A;
+}
+
+.price__little-text {
+  position: absolute;
+  top: 10px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.price__little-text-2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #AFAFAF;
+}
+
+
+.price__list-sub {
+  @include list;
+
+}
+
+.price__list-item {
+  margin-bottom: 32px;
+}
+
+.price__list-text-li {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: #22343D;
+}
+
+
+.price__button {
+  @include link-style;
+  transition: 0.3s;
+  padding: 11px 19px;
+}
+
+@media only screen and (max-width:425px) {
+  .price__list {
+    flex-direction: column;
+  }
+
+  .price__item:nth-child(2) {
+    margin-bottom: 32px;
+  }
+
+  .price__item {
+    max-width: 375px;
+    width: 100%;
+    padding-right:0 ;
+    padding-left: 0;
+    margin-bottom: 32px;
+  }
+
+  .price__sub-text {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+

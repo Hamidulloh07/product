@@ -1,0 +1,141 @@
+.client {
+  margin-top: 150px;
+}
+
+.client__div {
+
+}
+
+.client__title-div {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 537px;
+  width: 100%;
+}
+
+.client__heading {
+  @include heading;
+  margin-bottom: 8px;
+  font-size: 34px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #22343D;
+}
+
+.client__text {
+  @include text;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #22343D;
+}
+
+.client__list {
+  @include list;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client__item {
+  
+  padding: 28px 26px 23px;
+  max-width: 327px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+}
+
+.client__img {
+  width: 100px;
+  height: 16px;
+  margin-bottom: 16px;
+}
+
+.client__quote {
+  margin: 0;
+  margin-bottom: 17px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.client__name {
+  position: relative;
+  margin-bottom: 5px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.2px;
+color: #02897A;
+  margin-left: 75px;
+}
+
+.client__name::before {
+  position: absolute;
+  background-image: url("/image/Ellips.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: -70px;
+  content: "";
+}
+
+.client__item:nth-child(2) .client__name::before {
+  position: absolute;
+  background-image: url("/image/Ellips-1.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: -70px;
+  content: "";
+}
+
+.client__item:nth-child(3) .client__name::before {
+  position: absolute;
+  background-image: url("/image/Ellips-2.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: -70px;
+  content: "";
+}
+
+
+.client__job {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.2px;
+color: #252B42;
+  margin-left: 75px;
+}
+
+@media only screen and (max-width:425px) {
+  .client__list {
+    flex-direction: column;
+  }
+
+  .client__item{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .client__heading {
+    font-size: 34px;
+    line-height: 57px;
+  }
+}
+

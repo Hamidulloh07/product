@@ -1,0 +1,131 @@
+.hero { 
+  margin-top: 90px;
+  margin-bottom: 100px;
+  background-color: $section_background-color;
+}
+.hero__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.hero__title--div {
+  max-width: 460px;
+  width: 100%;
+
+}  
+
+.hero__title--heading {
+  @include heading;
+  padding-right: 40px;
+  margin-bottom: 18px;
+  font-size: 40px;
+line-height: 60px;
+color: #22343D;
+}
+
+.hero__title--text {
+  @include text;
+  margin-bottom: 45px;
+  font-size: 18px;
+line-height: 28px;
+color: #22343D;
+}
+
+.hero__title--span {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  max-width: 366px;
+  width: 100%;
+}
+
+.hero__title-sub--button {
+  @include link-style;
+  padding: 15px 41px;
+} 
+
+.hero__title-sub--button:hover {
+  background: #c8dad7;
+  color: #02897A;
+
+}
+
+
+.hero__title-sub--button-2 {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #02897900;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #02897A; 
+}
+
+.hero__img--div {
+
+}
+
+@media only screen and (max-width:768px) {
+  .hero__div {
+    text-align: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+} 
+
+@media only screen and (max-width:425px) {
+  .hero__title--heading {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  .hero {
+    margin-top: 120px;
+  }
+
+  .hero__title--span {
+    
+    margin: 0 auto;
+  }
+
+  .hero__title--span button {
+    margin-right: 22px;
+    max-width: 142px;
+    width: 100%;
+    padding-right:0 ;
+    padding-left: 0;
+  }
+
+  .hero__title--span a {
+
+  }
+
+  .hero__title--text {
+
+  }
+
+  .hero__img--div {
+    max-width: 338px;
+    width: 100%;
+    max-height: 310px;
+    height: 100%;
+    margin: 0 auto; 
+    margin-bottom: 50px;
+  }
+
+  .hero__title--div {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
